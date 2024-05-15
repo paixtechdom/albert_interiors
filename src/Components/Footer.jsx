@@ -83,8 +83,8 @@ const Footer = () => {
                         </div>
                         <div className="flex gap-5 lg:justify-between mt-5">
                             {
-                                icons.map((icon) => (
-                                   <i className={`bi bi-${icon.icon}  text-orange-500`}></i>
+                                icons.map((icon, i) => (
+                                   <i key={i} className={`bi bi-${icon.icon}  text-orange-500`}></i>
                                 ))
                             }
                         </div>
@@ -113,7 +113,7 @@ const LinksContainer = ({data, header}) => {
                 {
                     data.map((d, i) => (
                         header == 'Navigation' ? 
-                        <div className='cursor-pointer' 
+                        <div key={i} className='cursor-pointer' 
                         onClick={() => {
                             document.querySelector(`#${d.link}`).scrollIntoView({
                                 behavior: 'smooth'

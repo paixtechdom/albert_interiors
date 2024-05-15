@@ -23,7 +23,7 @@ export const Get = ({data, title}) => {
                 <div className="w-full lg:w-6/12 text-orange-500  flex flex-col justify-center lg:items-center h-full gap-3">
                     {
                         data.map((g, i) => (
-                            <Parallax id={g.title} className={'lg:w-11/12'}>
+                            <Parallax key={i} id={g.title} className={'lg:w-11/12'}>
                                 <div key={i} className="flex flex-col gap-1 overflow-hidden">
                                     <div className="flex justify-start items-start text-xl gap-4 md:gap-8 hover:bg-white hover:bg-opacity-10 transition-all duration-500 p-3 rounded-xl cursor-pointer w-full" onClick={() => {
                                             setCurrentGet(g.desc && currentGet == i ? 0 : i)

@@ -50,7 +50,7 @@ const Navbar = () => {
 
                 <div className={`flex flex-col items-center justify-start w-[100vw] gap-5 fixed top-[8vh] md:top-[10vh]  bg-orange-100 bg-opacity-90 lg:bg-transparent z-50 h-screen transition-all duration-1000 border-b border-secondary  ${showNav ? 'left-0' : 'left-[100vw] lg:left-0'} lg:flex-row lg:justify-center lg:gap-0 lg:h-fit lg:top-0 lg:relative w-10/12 lg:border-0`}>
                     <div className={`flex flex-col items-center 
-                    w-10/12 mt-[10vh]  gap-9 lg:justify-end xl:justify-center lg:top-0 lg:flex-row lg:gap-12 xl:gap-14 lg:w-full text-black text-2xl lg:text-sm lg:mt-0`}>
+                    w-10/12 mt-[10vh] gap-9 lg:justify-end xl:justify-center lg:top-0 lg:flex-row lg:gap-9 xl:gap-14 lg:w-full text-black text-2xl lg:text-sm lg:mt-0`}>
                         {
                             NavInfo.map((n, i) => (
                                 <div key={i} className={`w-fit cursor-pointer ${currentNav === i ? 'border-b border-orange-500 font-bold text-orange-500' :  'text-black'}`}  
