@@ -31,7 +31,15 @@ const Layout = () =>{
             <Navbar />
           </Suspense>
             
-          <Outlet />
+          <Suspense fallback={
+          <div className='bg-orange-100 h-screen center flex-col gap-4 w-full text-xl'>
+            <h1 className='font-bold text-6xl text-orange-500 animate-bounce'>
+              A.I
+            </h1>
+          </div>
+        }>
+          <HomePage /> 
+        </Suspense>
 
           <Suspense fallback={<></>}>
             <Footer />
@@ -49,19 +57,6 @@ const router = createBrowserRouter([
     path: '/',
     element: <Layout />,
     children:[
-      {
-        path: '/',
-        element: <Suspense fallback={
-          <div className='bg-orange-100 h-screen center flex-col gap-4 w-full text-xl'>
-            <h1 className='font-bold text-6xl text-orange-500 animate-bounce'>
-              A.I
-            </h1>
-          </div>
-        }>
-          <HomePage /> 
-        </Suspense>
-      },
-
       {
         path: '/*',
         element: <div className='mt-9 w-full bg-gray-200 flex flex-col items-center justify-center h-96'>
