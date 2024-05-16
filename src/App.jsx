@@ -19,7 +19,6 @@ function delayLoad(promise) {
 export const AppContext = createContext()
 
 const Layout = () =>{
-  const url = document.baseURI
   const [ currentNav, setCurrentNav ] = useState(0)
 
 

@@ -42,7 +42,7 @@ const HomePage = () => {
 
             <Get data={Process} title={['Simple', 'Solutions']} />
 
-            <section className="w-11/12 lg:w-10/12 xl:w-9/12 flex flex-col lg:flex-row justify-between items-center py-[10vh] gap-12">
+            <section className="w-11/12 lg:w-10/12 xl:w-9/12 flex flex-col-reverse lg:flex-row justify-between items-center py-[10vh] gap-12">
 
                 <Parallax id={'perfect'} clas="w-full lg:w-6/12 flex flex-col gap-5">
                     <h1 className=" text-4xl text-orange-500">Perfect Designs for your Home</h1>
