@@ -7,7 +7,7 @@ export const Button = ({text, type, }) => {
             document.querySelector('#Contact').scrollIntoView({
                 behavior: 'smooth'
             })
-            setShowNav(false)
+            setShowNav(setShowNav && false)
         }}>
             {text.toUpperCase()}
         </button>
