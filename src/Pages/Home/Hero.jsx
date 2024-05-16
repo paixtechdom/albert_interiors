@@ -25,7 +25,7 @@ export const Hero = () => {
     }
 
     return(
-        <section id='Home' className={`parent center mt-[20vh] lg:mt-0 min-h-[100vh] lg:h-[100vh] w-full relative bg-white bg-cover bg-center `}>
+        <section id='Home' className={`parent center pt-[20vh] lg:pt-0 min-h-[100vh] lg:h-[100vh] w-full relative bg-white bg-cover bg-center `}>
 
             <div className="h-[90%] flex flex-col lg:flex-row justify-between items-center w-11/12 lg:w-10/12 xl:w-9/12 gap-[50px] lg:gap-0">
                 
