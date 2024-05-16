@@ -67,7 +67,7 @@ const Navbar = () => {
                     <div className="flex justify-center lg:justify-end mt-9 w-10/12 lg:mt-0 lg:w-6/12
                     xl:w-3/12 lg:flex-row">
 
-                        <Button text={'Contact Us'} type={'transparent'}/>
+                        <Button text={'Contact Us'} type={'transparent'} setShowNav={setShowNav}/>
                     </div>
                 </div>
             </nav>

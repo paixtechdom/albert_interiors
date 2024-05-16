@@ -1,4 +1,4 @@
-export const Button = ({text, type}) => {
+export const Button = ({text, type, }) => {
     return(
         <button className={`min-w-[150px] p-3 px-8 w-fit text-sm rounded-xl 
         ${type == 'primary' ? 'bg-white text-orange-500 px-5 border border-orange-500' : 
@@ -7,6 +7,7 @@ export const Button = ({text, type}) => {
             document.querySelector('#Contact').scrollIntoView({
                 behavior: 'smooth'
             })
+            setShowNav(false)
         }}>
             {text.toUpperCase()}
         </button>
